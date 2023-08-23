@@ -55,7 +55,7 @@ body {
   width: 96%;
   display: grid;
   gap: 1.8rem;
-  grid-template-columns: 14em auto 16em;
+  grid-template-columns: 14em auto 20em;
 }
 
 a {
@@ -139,7 +139,7 @@ aside .top {
   margin-top: 1.5em;
 }
 
-side .logo {
+aside .logo {
   display: flex;
   gap: 0.8rem;
 }
@@ -381,7 +381,6 @@ main .recent-orders a {
 
 /* RIGHT */
 .right {
-  border: 1px solid #000;
   margin-top: 1.6em;
 }
 
@@ -389,5 +388,57 @@ main .recent-orders a {
   display: flex;
   justify-content: end;
   gap: 2rem;
-  background: gray;
+  /* background: gray; */
+}
+.right .top button {
+  display: none;
+}
+
+.right .theme-toggler {
+  background: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+
+.right .theme-toggler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .theme-toggler span.active {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--border-radius-1);
+}
+
+.right .top .profile {
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+}
+
+/* RECENT UPDATES */
+.right .recent-updates {
+  margin-top: 1rem;
+}
+
+.right .recent-updates h2 {
+  margin-bottom: 0.8rem;
+}
+
+.right .recent-updates .updates {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
 }
